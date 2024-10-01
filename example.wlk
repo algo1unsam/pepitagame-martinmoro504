@@ -1,4 +1,4 @@
-object pepita {
+/*object pepita {
   var energy = 100
 
   method energy() = energy
@@ -6,4 +6,4 @@ object pepita {
   method fly(minutes) {
     energy = energy - minutes * 3
   }
-}
+}*/

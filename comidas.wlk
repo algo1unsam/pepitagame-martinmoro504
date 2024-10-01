@@ -7,6 +7,8 @@ object manzana {
 	method position() = game.at(1, 8)
 
 	method energiaQueOtorga() = 40
+	
+	method teEncontro(ave) {}
 
 }
 
@@ -18,5 +20,8 @@ object alpiste {
 
 	method energiaQueOtorga() = 70
 
+	method teEncontro(ave) {}
+
 }
+
 
