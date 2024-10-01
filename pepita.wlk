@@ -32,11 +32,17 @@ object pepita {
 
 	method irA(nuevaPosicion) {
 		if(self.tieneEnergia()){
-			if(nuevaPosicion.x().between(0,9) and nuevaPosicion.y().between(0,9)){
+			if(self.esVisible(nuevaPosicion)){
 				self.vola(position.distance(nuevaPosicion))
 				position = nuevaPosicion}
+		}else{
+			game.say(self, "Me canse:()")
+			game.schedule(2000, { game.stop() })
 		}
 	}
+	
+	method esVisible(posicion)=posicion.x().between(0,9) and posicion.y().between(0,9)
+
 	method tieneEnergia()= energia>0
 
 	method estaCansada() {
